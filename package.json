@@ -1,0 +1,8 @@
+{
+  "name": "Skype-Electron",
+  "version": "0.0.1",
+  "main": "main.js",
+  "dependencies": {
+    "file-system": "^2.2.1"
+  }
+}
