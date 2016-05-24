@@ -25,7 +25,6 @@ var unreadNotification = false;
 
 
 
-
 function createMainWindow() {
   var win = new electron.BrowserWindow({
     title: appName,
@@ -118,24 +117,18 @@ app.on('ready', () => {
 
   page.on('dom-ready', () => {
     showAndCenter(mainWindow);
-      // Insert our css from overide.css here
-  var css = fs.readFile(path.join(__dirname, 'css', 'overide.css'),'utf8', function (err,data) {
-    if (err) {
-      return console.log('------------------ The Error: ------------------', err);
-    }
-    page.insertCSS(data);
-  });
+    // Insert our css from overide.css here
+    var css = fs.readFile(path.join(__dirname, 'css', 'overide.css'), 'utf8', function(err, data) {
+      if (err) {
+        return console.log('------------------ The Error: ------------------', err);
+      }
+      page.insertCSS(data);
+    });
   });
 
   page.on('new-window', (e, url) => {
     e.preventDefault();
     electron.shell.openExternal(url);
-    var css = fs.readFile(path.join(__dirname, 'css', 'overide.css'),'utf8', function (err,data) {
-    if (err) {
-      return console.log('------------------ The Error: ------------------', err);
-    }
-    page.insertCSS(data);
-  });
   });
 });
 

@@ -1,8 +1,10 @@
 {
-  "name": "Skype-Electron",
+  "name": "Skype-For-Web-For-Desktop",
   "version": "0.0.1",
   "main": "main.js",
   "dependencies": {
-    "file-system": "^2.2.1"
+    "file-system": "^2.2.1",
+    "node-notifier": "^4.5.0",
+    "requests": "^0.1.7"
   }
 }
