@@ -210,3 +210,12 @@
   :root .swx .chat .conversation .me.message.media .content .messageTextWrapper {
     background-color: #2A3742;
 }
+
+
+:root .swx .chat .conversation .their.message.media .content .messageTextWrapper {
+    background-color: transparent !important;
+}
+
+:root .swx .suggestionList {
+    display: none !important;
+}
