@@ -1,6 +1,16 @@
 # Skype-For-Web-For-Desktop
 An Electron app born out of the frustration of the lack of theming support for skype. All this app does is load Skype for Web in an electron app and insert a stylesheet into it to allow you to theme skype!
 
+It also uses less memory, doesn't have any ads and doesn't crash every 5 seconds.
+
+# Download
+Click on releases and select the latest from this github repo.
+
+# Known Issues
+* Voice and Video Calling do not work
+* Can not recieve contact requests
+* Probably something else I forgot
+
 ![Skype For Web for Desktop Preview](http://www.csprance.com/shots/2016-05-24_11-36-04acc0d8a2-99da-4d25-9c55-573094323777.png "Screenshot of Dark UI Theme")
 
 ## Prerequisites
